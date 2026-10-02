@@ -1,0 +1,1530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ARIA FITNESS — Premium luxury gym in India. Elite personal training, strength coaching, fat loss programs, nutrition guidance, group fitness, and state-of-the-art equipment." />
+  <meta name="keywords" content="gym, fitness, personal trainer, weight loss, muscle gain, ARIA FITNESS, luxury gym" />
+  <title>ARIA FITNESS — Transform Your Body. Unleash Your Strength.</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="assets/images/logo.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- AOS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── Scroll Progress ── -->
+  <div id="scroll-progress"></div>
+
+  <!-- ── Custom Cursor ── -->
+  <div id="cursor"></div>
+  <div id="cursor-follower"></div>
+  <div class="mouse-glow" id="mouse-glow"></div>
+
+  <!-- ════════════════════════════════
+       NAVBAR
+  ════════════════════════════════ -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">
+      <img src="assets/images/logo.jpg" alt="ARIA FITNESS Logo" />
+      <span class="nav-logo-text">ARIA <span>FITNESS</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#membership">Pricing</a></li>
+      <li><a href="#trainers">Trainers</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact" class="nav-btn">Join Now</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#membership" class="mobile-link">Pricing</a>
+    <a href="#trainers" class="mobile-link">Trainers</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#bmi" class="mobile-link">BMI Calc</a>
+    <a href="#classes" class="mobile-link">Classes</a>
+    <a href="#gallery" class="mobile-link">Gallery</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ════════════════════════════════
+       3. HERO SECTION
+  ════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <canvas id="hero-canvas"></canvas>
+
+    <!-- Floating icons -->
+    <div class="float-icons">
+      <i class="fa-solid fa-dumbbell float-icon" style="top:20%;left:5%;animation-delay:0s;font-size:20px;"></i>
+      <i class="fa-solid fa-fire float-icon" style="top:60%;left:3%;animation-delay:1s;font-size:16px;"></i>
+      <i class="fa-solid fa-bolt float-icon" style="top:35%;right:8%;animation-delay:2s;font-size:22px;"></i>
+      <i class="fa-solid fa-heart-pulse float-icon" style="top:75%;right:5%;animation-delay:0.5s;font-size:18px;"></i>
+      <i class="fa-solid fa-person-running float-icon" style="top:15%;right:15%;animation-delay:1.5s;font-size:20px;"></i>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">Elite Fitness Experience</div>
+      <h1 class="hero-title">
+        <span class="brand">ARIA FITNESS</span>
+        <span class="tagline" id="hero-typing"></span>
+        <span class="typing-cursor"></span>
+      </h1>
+      <p class="hero-desc">
+        Elite personal training, strength coaching, fat loss programs, nutrition guidance,
+        group fitness, and premium gym equipment under one roof.
+      </p>
+      <div class="hero-btns">
+        <a href="#membership" class="btn btn-red"><i class="fa-solid fa-fire-flame-curved"></i> Join Now</a>
+        <a href="#contact" class="btn btn-outline"><i class="fa-regular fa-calendar"></i> Book Free Trial</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="12">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="5000">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Members</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="35">0</span><span class="plus">+</span></div>
+          <div class="stat-label">Certified Trainers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number"><span class="counter" data-target="98">0</span><span class="plus">%</span></div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- ════════════════════════════════
+       4. ABOUT SECTION
+  ════════════════════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img-wrap" data-aos="fade-up" data-aos-duration="800">
+          <img src="assets/images/about-gym.jpg" alt="ARIA FITNESS Gym Interior" />
+          <div class="about-badge">
+            <div class="big-num">12+</div>
+            <div class="big-label">Years of Excellence</div>
+          </div>
+        </div>
+        <div data-aos="fade-up" data-aos-duration="800">
+          <div class="section-tag">About Us</div>
+          <h2 class="section-title">About <span>ARIA FITNESS</span></h2>
+          <div class="red-line"></div>
+          <p class="section-desc" style="margin-bottom:20px;">
+            Welcome to ARIA FITNESS — where passion meets performance. We are not just a gym;
+            we are a premium fitness ecosystem designed to transform your body and ignite your potential.
+          </p>
+          <p class="section-desc" style="margin-bottom:32px;">
+            With world-class equipment, certified expert trainers, personalized nutrition plans,
+            and a community of driven individuals, ARIA FITNESS delivers results that speak for themselves.
+          </p>
+          <div class="about-features">
+            <div class="feature-chip"><i class="fa-solid fa-dumbbell"></i> Strength Zone</div>
+            <div class="feature-chip"><i class="fa-solid fa-heart-pulse"></i> Cardio Arena</div>
+            <div class="feature-chip"><i class="fa-solid fa-fire"></i> CrossFit Studio</div>
+            <div class="feature-chip"><i class="fa-solid fa-spa"></i> Yoga & Recovery</div>
+            <div class="feature-chip"><i class="fa-solid fa-user-tie"></i> Personal Coaching</div>
+            <div class="feature-chip"><i class="fa-solid fa-bowl-food"></i> Nutrition Plans</div>
+          </div>
+          <div style="margin-top:36px;">
+            <a href="#contact" class="btn btn-red"><i class="fa-solid fa-arrow-right"></i> Get Started Today</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       5. WHY CHOOSE US
+  ════════════════════════════════ -->
+  <section id="why-us" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Why ARIA FITNESS</div>
+        <h2 class="section-title">Why <span>Choose Us</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="why-grid">
+        <div class="why-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="why-icon"><i class="fa-solid fa-award"></i></div>
+          <h3>Certified Trainers</h3>
+          <p>35+ nationally certified fitness experts dedicated to your transformation journey with customized programs.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="why-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>Latest Equipment</h3>
+          <p>120+ premium commercial-grade machines and free weights for every muscle group and fitness goal.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="why-icon"><i class="fa-solid fa-person-running"></i></div>
+          <h3>Body Transformation</h3>
+          <p>Proven science-backed programs with 98% success rate. Real results for real people — guaranteed.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="why-icon"><i class="fa-solid fa-bowl-food"></i></div>
+          <h3>Diet Consultation</h3>
+          <p>Personalized macro-optimized meal plans crafted by certified nutritionists to fuel your performance.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+          <h3>24×7 Support</h3>
+          <p>Round-the-clock gym access and dedicated support team always available to assist your fitness journey.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="why-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Community Events</h3>
+          <p>Monthly challenges, competitions, nutrition workshops, and transformation contests for motivation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       6. MEMBERSHIP PLANS
+  ════════════════════════════════ -->
+  <section id="membership" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Membership</div>
+        <h2 class="section-title">Choose Your <span>Plan</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+        <p class="section-desc" style="margin:0 auto 0;text-align:center;">Flexible plans designed for every fitness level and lifestyle.</p>
+      </div>
+      <div class="plans-grid">
+
+        <!-- Basic -->
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="plan-name">Basic</div>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">999</span>
+            <span class="period">/month</span>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Full Gym Access</li>
+            <li><i class="fa-solid fa-check"></i> Cardio Equipment</li>
+            <li><i class="fa-solid fa-check"></i> Locker Room</li>
+            <li><i class="fa-solid fa-check"></i> 2 Group Classes/Week</li>
+            <li class="unavailable"><i class="fa-solid fa-xmark"></i> Personal Trainer</li>
+            <li class="unavailable"><i class="fa-solid fa-xmark"></i> Diet Consultation</li>
+            <li class="unavailable"><i class="fa-solid fa-xmark"></i> Steam Bath</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Get Started</a>
+        </div>
+
+        <!-- Pro - Featured -->
+        <div class="plan-card featured" data-aos="fade-up" data-aos-delay="150">
+          <div class="plan-badge">🔥 Most Popular</div>
+          <div class="plan-name" style="color:#fff;">Pro</div>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">1999</span>
+            <span class="period">/month</span>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Gym + CrossFit Access</li>
+            <li><i class="fa-solid fa-check"></i> Personal Trainer (2/week)</li>
+            <li><i class="fa-solid fa-check"></i> Custom Diet Plan</li>
+            <li><i class="fa-solid fa-check"></i> Steam Bath Access</li>
+            <li><i class="fa-solid fa-check"></i> Unlimited Group Classes</li>
+            <li><i class="fa-solid fa-check"></i> Body Composition Analysis</li>
+            <li class="unavailable"><i class="fa-solid fa-xmark"></i> Recovery Therapy</li>
+          </ul>
+          <a href="#contact" class="btn btn-red">Join Pro</a>
+        </div>
+
+        <!-- Elite VIP -->
+        <div class="plan-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="plan-name">Elite VIP</div>
+          <div class="plan-price">
+            <span class="currency">₹</span>
+            <span class="amount">3499</span>
+            <span class="period">/month</span>
+          </div>
+          <div class="plan-divider"></div>
+          <ul class="plan-features">
+            <li><i class="fa-solid fa-check"></i> Unlimited All Classes</li>
+            <li><i class="fa-solid fa-check"></i> Dedicated Nutrition Coach</li>
+            <li><i class="fa-solid fa-check"></i> Recovery Therapy</li>
+            <li><i class="fa-solid fa-check"></i> Full Body Analysis</li>
+            <li><i class="fa-solid fa-check"></i> Priority Support 24/7</li>
+            <li><i class="fa-solid fa-check"></i> VIP Lounge Access</li>
+            <li><i class="fa-solid fa-check"></i> Guest Passes (2/month)</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline">Go VIP</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       7. PERSONAL TRAINERS
+  ════════════════════════════════ -->
+  <section id="trainers" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Expert Team</div>
+        <h2 class="section-title">Our <span>Trainers</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="trainers-grid">
+
+        <!-- Rahul -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="trainer-img">
+            <img src="assets/images/trainer-rahul.jpg" alt="Rahul Sharma" />
+            <div class="trainer-overlay"></div>
+            <div class="trainer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Rahul Sharma</h3>
+            <div class="trainer-spec">Strength Coach</div>
+            <div class="trainer-exp"><i class="fa-solid fa-medal"></i> 8 Years Experience</div>
+            <a href="#contact" class="btn btn-red" style="font-size:11px;padding:10px 20px;">Book Trainer</a>
+          </div>
+        </div>
+
+        <!-- Aditi -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="trainer-img">
+            <img src="assets/images/trainer-aditi.jpg" alt="Aditi Verma" />
+            <div class="trainer-overlay"></div>
+            <div class="trainer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Aditi Verma</h3>
+            <div class="trainer-spec">Fat Loss Specialist</div>
+            <div class="trainer-exp"><i class="fa-solid fa-medal"></i> 6 Years Experience</div>
+            <a href="#contact" class="btn btn-red" style="font-size:11px;padding:10px 20px;">Book Trainer</a>
+          </div>
+        </div>
+
+        <!-- Arjun -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="trainer-img">
+            <img src="assets/images/trainer-arjun.jpg" alt="Arjun Patel" />
+            <div class="trainer-overlay"></div>
+            <div class="trainer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Arjun Patel</h3>
+            <div class="trainer-spec">Bodybuilding Expert</div>
+            <div class="trainer-exp"><i class="fa-solid fa-medal"></i> 10 Years Experience</div>
+            <a href="#contact" class="btn btn-red" style="font-size:11px;padding:10px 20px;">Book Trainer</a>
+          </div>
+        </div>
+
+        <!-- Neha -->
+        <div class="trainer-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="trainer-img">
+            <img src="assets/images/trainer-neha.jpg" alt="Neha Singh" />
+            <div class="trainer-overlay"></div>
+            <div class="trainer-social">
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Neha Singh</h3>
+            <div class="trainer-spec">Yoga & Recovery</div>
+            <div class="trainer-exp"><i class="fa-solid fa-medal"></i> 7 Years Experience</div>
+            <a href="#contact" class="btn btn-red" style="font-size:11px;padding:10px 20px;">Book Trainer</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       8. GYM SERVICES
+  ════════════════════════════════ -->
+  <section id="services" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">What We Offer</div>
+        <h2 class="section-title">Our <span>Services</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="service-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h4>Strength Training</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="50">
+          <div class="service-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          <h4>CrossFit</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="service-icon"><i class="fa-solid fa-bolt"></i></div>
+          <h4>HIIT</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="150">
+          <div class="service-icon"><i class="fa-solid fa-music"></i></div>
+          <h4>Zumba</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="service-icon"><i class="fa-solid fa-spa"></i></div>
+          <h4>Yoga</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="250">
+          <div class="service-icon"><i class="fa-solid fa-trophy"></i></div>
+          <h4>Bodybuilding</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="service-icon"><i class="fa-solid fa-weight-scale"></i></div>
+          <h4>Weight Loss</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="350">
+          <div class="service-icon"><i class="fa-solid fa-person-walking-arrow-right"></i></div>
+          <h4>Muscle Gain</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+          <h4>Functional Fitness</h4>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="450">
+          <div class="service-icon"><i class="fa-solid fa-hand-fist"></i></div>
+          <h4>Boxing</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       9. WORKOUT CATEGORIES
+  ════════════════════════════════ -->
+  <section id="workouts" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Training</div>
+        <h2 class="section-title">Workout <span>Categories</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+        <p class="section-desc" style="text-align:center;margin:0 auto 0;">Click any category to see the full workout plan.</p>
+      </div>
+      <div class="workouts-grid" style="margin-top:60px;">
+
+        <!-- Chest Day -->
+        <div class="workout-flip-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="wfc-inner">
+            <div class="wfc-front" style="background:linear-gradient(135deg,#1a0000,#2d0000);">
+              <div class="workout-icon"><i class="fa-solid fa-person-walking"></i></div>
+              <div class="workout-name">Chest Day</div>
+              <div class="workout-reps">8 exercises · 45 min</div>
+            </div>
+            <div class="wfc-back">
+              <div class="wfc-back-title">CHEST DAY</div>
+              <ul class="wfc-list">
+                <li><span>Flat Barbell Bench Press</span><span>4×10</span></li>
+                <li><span>Incline Dumbbell Press</span><span>4×10</span></li>
+                <li><span>Decline Bench Press</span><span>3×10</span></li>
+                <li><span>Cable Chest Fly</span><span>4×12</span></li>
+                <li><span>Dumbbell Pullover</span><span>3×12</span></li>
+                <li><span>Push-Ups</span><span>3×fail</span></li>
+                <li><span>Pec Deck Machine</span><span>3×15</span></li>
+                <li><span>Close-Grip Press</span><span>3×10</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Leg Day -->
+        <div class="workout-flip-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="wfc-inner">
+            <div class="wfc-front" style="background:linear-gradient(135deg,#0d1a00,#1a2d00);">
+              <div class="workout-icon"><i class="fa-solid fa-person-running"></i></div>
+              <div class="workout-name">Leg Day</div>
+              <div class="workout-reps">7 exercises · 50 min</div>
+            </div>
+            <div class="wfc-back">
+              <div class="wfc-back-title">LEG DAY</div>
+              <ul class="wfc-list">
+                <li><span>Back Squat</span><span>5×5</span></li>
+                <li><span>Leg Press</span><span>4×12</span></li>
+                <li><span>Romanian Deadlift</span><span>4×10</span></li>
+                <li><span>Leg Extension</span><span>3×15</span></li>
+                <li><span>Leg Curl</span><span>3×15</span></li>
+                <li><span>Walking Lunges</span><span>3×20</span></li>
+                <li><span>Calf Raises</span><span>5×20</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Back Workout -->
+        <div class="workout-flip-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="wfc-inner">
+            <div class="wfc-front" style="background:linear-gradient(135deg,#001a1a,#002d2d);">
+              <div class="workout-icon"><i class="fa-solid fa-dumbbell"></i></div>
+              <div class="workout-name">Back Workout</div>
+              <div class="workout-reps">7 exercises · 45 min</div>
+            </div>
+            <div class="wfc-back">
+              <div class="wfc-back-title">BACK DAY</div>
+              <ul class="wfc-list">
+                <li><span>Deadlift</span><span>4×5</span></li>
+                <li><span>Pull-Ups</span><span>4×fail</span></li>
+                <li><span>Barbell Bent-Over Row</span><span>4×8</span></li>
+                <li><span>Seated Cable Row</span><span>3×12</span></li>
+                <li><span>Lat Pulldown</span><span>4×10</span></li>
+                <li><span>Single-Arm DB Row</span><span>3×10</span></li>
+                <li><span>T-Bar Row</span><span>3×12</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Shoulders -->
+        <div class="workout-flip-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="wfc-inner">
+            <div class="wfc-front" style="background:linear-gradient(135deg,#1a001a,#2d002d);">
+              <div class="workout-icon"><i class="fa-solid fa-bolt"></i></div>
+              <div class="workout-name">Shoulders</div>
+              <div class="workout-reps">6 exercises · 40 min</div>
+            </div>
+            <div class="wfc-back">
+              <div class="wfc-back-title">SHOULDERS</div>
+              <ul class="wfc-list">
+                <li><span>Seated Overhead Press</span><span>4×8</span></li>
+                <li><span>Lateral Raise</span><span>4×15</span></li>
+                <li><span>Front Raise</span><span>3×12</span></li>
+                <li><span>Rear Delt Fly</span><span>4×15</span></li>
+                <li><span>Arnold Press</span><span>3×10</span></li>
+                <li><span>Face Pulls</span><span>3×15</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Arms -->
+        <div class="workout-flip-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="wfc-inner">
+            <div class="wfc-front" style="background:linear-gradient(135deg,#1a0d00,#2d1a00);">
+              <div class="workout-icon"><i class="fa-solid fa-fire"></i></div>
+              <div class="workout-name">Arms</div>
+              <div class="workout-reps">8 exercises · 40 min</div>
+            </div>
+            <div class="wfc-back">
+              <div class="wfc-back-title">ARM DAY</div>
+              <ul class="wfc-list">
+                <li><span>Barbell Curl</span><span>4×10</span></li>
+                <li><span>Hammer Curl</span><span>3×12</span></li>
+                <li><span>Incline DB Curl</span><span>3×12</span></li>
+                <li><span>Preacher Curl</span><span>3×10</span></li>
+                <li><span>Tricep Pushdown</span><span>4×12</span></li>
+                <li><span>Skull Crushers</span><span>4×10</span></li>
+                <li><span>Overhead Tricep Ext.</span><span>3×12</span></li>
+                <li><span>Diamond Push-Ups</span><span>3×fail</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core -->
+        <div class="workout-flip-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="wfc-inner">
+            <div class="wfc-front" style="background:linear-gradient(135deg,#0d001a,#1a002d);">
+              <div class="workout-icon"><i class="fa-solid fa-star"></i></div>
+              <div class="workout-name">Core</div>
+              <div class="workout-reps">6 exercises · 30 min</div>
+            </div>
+            <div class="wfc-back">
+              <div class="wfc-back-title">CORE DAY</div>
+              <ul class="wfc-list">
+                <li><span>Plank</span><span>4×60s</span></li>
+                <li><span>Cable Crunch</span><span>4×15</span></li>
+                <li><span>Hanging Leg Raise</span><span>4×12</span></li>
+                <li><span>Russian Twist</span><span>3×20</span></li>
+                <li><span>Ab Wheel Rollout</span><span>3×10</span></li>
+                <li><span>Mountain Climbers</span><span>3×30s</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       10. BMI CALCULATOR
+  ════════════════════════════════ -->
+  <section id="bmi" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Health Tools</div>
+        <h2 class="section-title">BMI <span>Calculator</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="calc-wrap">
+        <div class="glass-card" data-aos="fade-up">
+          <div class="calc-form">
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="gender-toggle">
+                <button class="gender-btn active" id="btn-male" onclick="setGender('male')">
+                  <i class="fa-solid fa-mars"></i> Male
+                </button>
+                <button class="gender-btn" id="btn-female" onclick="setGender('female')">
+                  <i class="fa-solid fa-venus"></i> Female
+                </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Age</label>
+              <input type="number" id="bmi-age" placeholder="Enter your age" min="10" max="100" />
+            </div>
+            <div class="form-group">
+              <label>Height (cm)</label>
+              <input type="number" id="bmi-height" placeholder="Enter height in cm" />
+            </div>
+            <div class="form-group">
+              <label>Weight (kg)</label>
+              <input type="number" id="bmi-weight" placeholder="Enter weight in kg" />
+            </div>
+            <button class="btn btn-red" onclick="calculateBMI()" style="justify-content:center;">
+              <i class="fa-solid fa-calculator"></i> Calculate BMI
+            </button>
+          </div>
+        </div>
+        <div class="bmi-result" data-aos="fade-up" id="bmi-result-wrap">
+          <div class="bmi-circle" id="bmi-circle">
+            <div class="bmi-value" id="bmi-value">--</div>
+            <div class="bmi-label">BMI Score</div>
+          </div>
+          <div class="bmi-status" id="bmi-status" style="color:var(--gray);">Enter your details</div>
+          <p class="bmi-suggestion" id="bmi-suggestion">Fill in the form to calculate your BMI and get personalized suggestions.</p>
+          <div class="bmi-scale" style="margin-top:24px;width:100%;">
+            <div class="bmi-scale-seg bmi-under" title="Underweight < 18.5"></div>
+            <div class="bmi-scale-seg bmi-normal" title="Normal 18.5-24.9"></div>
+            <div class="bmi-scale-seg bmi-over" title="Overweight 25-29.9"></div>
+            <div class="bmi-scale-seg bmi-obese" title="Obese ≥ 30"></div>
+          </div>
+          <div style="display:flex;gap:12px;margin-top:8px;flex-wrap:wrap;justify-content:center;">
+            <span style="font-size:10px;color:#60a5fa;">■ Underweight</span>
+            <span style="font-size:10px;color:#4ade80;">■ Normal</span>
+            <span style="font-size:10px;color:#fbbf24;">■ Overweight</span>
+            <span style="font-size:10px;color:var(--red-neon);">■ Obese</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       11. CALORIES CALCULATOR
+  ════════════════════════════════ -->
+  <section id="calories" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Nutrition Tool</div>
+        <h2 class="section-title">Calories <span>Calculator</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="calc-wrap">
+        <div class="glass-card" data-aos="fade-up">
+          <div class="calc-form">
+            <div class="form-group">
+              <label>Your Goal</label>
+              <select id="cal-goal">
+                <option value="loss">Weight Loss</option>
+                <option value="maintain">Maintain Weight</option>
+                <option value="gain">Muscle Gain</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Gender</label>
+              <div class="gender-toggle">
+                <button class="gender-btn active" id="cal-btn-male" onclick="setCalGender('male')">
+                  <i class="fa-solid fa-mars"></i> Male
+                </button>
+                <button class="gender-btn" id="cal-btn-female" onclick="setCalGender('female')">
+                  <i class="fa-solid fa-venus"></i> Female
+                </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Age</label>
+              <input type="number" id="cal-age" placeholder="Age" />
+            </div>
+            <div class="form-group">
+              <label>Height (cm)</label>
+              <input type="number" id="cal-height" placeholder="Height in cm" />
+            </div>
+            <div class="form-group">
+              <label>Weight (kg)</label>
+              <input type="number" id="cal-weight" placeholder="Weight in kg" />
+            </div>
+            <div class="form-group">
+              <label>Activity Level</label>
+              <select id="cal-activity">
+                <option value="1.2">Sedentary (office job)</option>
+                <option value="1.375">Light (1-3x/week)</option>
+                <option value="1.55" selected>Moderate (3-5x/week)</option>
+                <option value="1.725">Active (6-7x/week)</option>
+                <option value="1.9">Very Active (2x/day)</option>
+              </select>
+            </div>
+            <button class="btn btn-red" onclick="calculateCalories()" style="justify-content:center;">
+              <i class="fa-solid fa-fire-flame-curved"></i> Calculate Calories
+            </button>
+          </div>
+        </div>
+        <div style="display:flex;align-items:center;justify-content:center;" data-aos="fade-up">
+          <div class="calories-result-box" id="calories-result" style="width:100%;">
+            <p style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gray);margin-bottom:8px;">Daily Calories</p>
+            <div class="calories-num" id="cal-value">----</div>
+            <div class="calories-unit">KCAL / DAY</div>
+            <div class="plan-divider"></div>
+            <div class="calories-breakdown">
+              <div class="macro-item">
+                <div class="macro-val" id="cal-protein">--g</div>
+                <div class="macro-name">Protein</div>
+              </div>
+              <div class="macro-item">
+                <div class="macro-val" id="cal-carbs">--g</div>
+                <div class="macro-name">Carbs</div>
+              </div>
+              <div class="macro-item">
+                <div class="macro-val" id="cal-fat">--g</div>
+                <div class="macro-name">Fat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       12. BODY TRANSFORMATION
+  ════════════════════════════════ -->
+  <section id="transformation" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Success Stories</div>
+        <h2 class="section-title">Body <span>Transformations</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="transform-slider-wrap" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper transform-swiper" style="padding-bottom:50px;">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div style="display:grid;grid-template-columns:1fr 1fr;min-height:340px;">
+                <div style="background:linear-gradient(135deg,rgba(229,9,20,0.1),transparent);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;border-right:2px solid rgba(229,9,20,0.4);">
+                  <div style="font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--gray);line-height:1;">BEFORE</div>
+                  <div style="font-size:14px;color:var(--gray);margin-top:8px;">95 kg · Struggling</div>
+                  <div style="margin-top:20px;font-size:40px;">😔</div>
+                </div>
+                <div style="background:linear-gradient(135deg,transparent,rgba(229,9,20,0.1));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;">
+                  <div style="font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--red-neon);line-height:1;text-shadow:var(--glow);">AFTER</div>
+                  <div style="font-size:14px;color:var(--white);margin-top:8px;">72 kg · Confident</div>
+                  <div style="margin-top:20px;font-size:40px;">💪</div>
+                </div>
+              </div>
+              <div style="background:var(--dark-2);padding:24px;text-align:center;border-top:1px solid rgba(255,255,255,0.06);">
+                <h3 style="font-size:24px;color:var(--white);margin-bottom:6px;">Vikram Malhotra</h3>
+                <p style="font-size:13px;color:var(--gray);">Lost <span style="color:var(--red-neon);font-weight:700;">23 kg</span> in 5 months with ARIA FITNESS Pro plan</p>
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div style="display:grid;grid-template-columns:1fr 1fr;min-height:340px;">
+                <div style="background:linear-gradient(135deg,rgba(229,9,20,0.1),transparent);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;border-right:2px solid rgba(229,9,20,0.4);">
+                  <div style="font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--gray);line-height:1;">BEFORE</div>
+                  <div style="font-size:14px;color:var(--gray);margin-top:8px;">78 kg · Overweight</div>
+                  <div style="margin-top:20px;font-size:40px;">😔</div>
+                </div>
+                <div style="background:linear-gradient(135deg,transparent,rgba(229,9,20,0.1));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;">
+                  <div style="font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--red-neon);line-height:1;text-shadow:var(--glow);">AFTER</div>
+                  <div style="font-size:14px;color:var(--white);margin-top:8px;">58 kg · Athletic</div>
+                  <div style="margin-top:20px;font-size:40px;">🔥</div>
+                </div>
+              </div>
+              <div style="background:var(--dark-2);padding:24px;text-align:center;border-top:1px solid rgba(255,255,255,0.06);">
+                <h3 style="font-size:24px;color:var(--white);margin-bottom:6px;">Priya Kapoor</h3>
+                <p style="font-size:13px;color:var(--gray);">Lost <span style="color:var(--red-neon);font-weight:700;">20 kg</span> in 4 months with personalized training</p>
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div style="display:grid;grid-template-columns:1fr 1fr;min-height:340px;">
+                <div style="background:linear-gradient(135deg,rgba(229,9,20,0.1),transparent);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;border-right:2px solid rgba(229,9,20,0.4);">
+                  <div style="font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--gray);line-height:1;">BEFORE</div>
+                  <div style="font-size:14px;color:var(--gray);margin-top:8px;">65 kg · Skinny</div>
+                  <div style="margin-top:20px;font-size:40px;">🦴</div>
+                </div>
+                <div style="background:linear-gradient(135deg,transparent,rgba(229,9,20,0.1));display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;">
+                  <div style="font-family:'Bebas Neue',sans-serif;font-size:48px;color:var(--red-neon);line-height:1;text-shadow:var(--glow);">AFTER</div>
+                  <div style="font-size:14px;color:var(--white);margin-top:8px;">82 kg · Muscular</div>
+                  <div style="margin-top:20px;font-size:40px;">💪</div>
+                </div>
+              </div>
+              <div style="background:var(--dark-2);padding:24px;text-align:center;border-top:1px solid rgba(255,255,255,0.06);">
+                <h3 style="font-size:24px;color:var(--white);margin-bottom:6px;">Rohit Sharma</h3>
+                <p style="font-size:13px;color:var(--gray);">Gained <span style="color:var(--red-neon);font-weight:700;">17 kg</span> muscle in 6 months with Elite VIP</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       13. WORKOUT SCHEDULE
+  ════════════════════════════════ -->
+  <section id="schedule" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Timetable</div>
+        <h2 class="section-title">Weekly <span>Schedule</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div style="margin-top:60px;">
+        <div class="schedule-tabs">
+          <button class="day-tab active" onclick="showDay(this,'mon')">Mon</button>
+          <button class="day-tab" onclick="showDay(this,'tue')">Tue</button>
+          <button class="day-tab" onclick="showDay(this,'wed')">Wed</button>
+          <button class="day-tab" onclick="showDay(this,'thu')">Thu</button>
+          <button class="day-tab" onclick="showDay(this,'fri')">Fri</button>
+          <button class="day-tab" onclick="showDay(this,'sat')">Sat</button>
+          <button class="day-tab" onclick="showDay(this,'sun')">Sun</button>
+        </div>
+        <div id="schedule-content" class="schedule-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       14. EQUIPMENT SHOWCASE
+  ════════════════════════════════ -->
+  <section id="equipment" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Premium Equipment</div>
+        <h2 class="section-title">Our <span>Equipment</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="equipment-grid">
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="equip-icon"><i class="fa-solid fa-person-walking"></i></div>
+          <h4>Treadmill</h4>
+          <p>12 Units</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="60">
+          <div class="equip-icon"><i class="fa-solid fa-dumbbell"></i></div>
+          <h4>Bench Press</h4>
+          <p>8 Stations</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="120">
+          <div class="equip-icon"><i class="fa-solid fa-weight-hanging"></i></div>
+          <h4>Dumbbells</h4>
+          <p>2.5–50 kg</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="180">
+          <div class="equip-icon"><i class="fa-solid fa-gears"></i></div>
+          <h4>Cable Machine</h4>
+          <p>6 Stations</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="240">
+          <div class="equip-icon"><i class="fa-solid fa-arrows-up-down"></i></div>
+          <h4>Smith Machine</h4>
+          <p>4 Units</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="equip-icon"><i class="fa-solid fa-arrow-down-up-lock"></i></div>
+          <h4>Leg Press</h4>
+          <p>5 Stations</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="360">
+          <div class="equip-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h4>Row Machine</h4>
+          <p>8 Units</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="420">
+          <div class="equip-icon"><i class="fa-solid fa-fire-flame-curved"></i></div>
+          <h4>Battle Rope</h4>
+          <p>4 Sets</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="480">
+          <div class="equip-icon"><i class="fa-solid fa-circle-dot"></i></div>
+          <h4>Kettlebells</h4>
+          <p>4–32 kg</p>
+        </div>
+        <div class="equip-card" data-aos="zoom-in" data-aos-delay="540">
+          <div class="equip-icon"><i class="fa-solid fa-minus"></i></div>
+          <h4>Barbells</h4>
+          <p>20 kg standard</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       15. FITNESS CLASSES
+  ════════════════════════════════ -->
+  <section id="classes" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Book a Class</div>
+        <h2 class="section-title">Fitness <span>Classes</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="classes-grid">
+
+        <div class="class-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="class-header">🧘</div>
+          <div class="class-body">
+            <h3 class="class-name">Yoga Flow</h3>
+            <div class="class-time"><i class="fa-solid fa-clock"></i> Mon, Wed, Fri · 7:00 AM</div>
+            <p class="class-desc">Find your balance with our expert-led Vinyasa yoga flow, perfect for all levels.</p>
+            <div class="class-meta">
+              <div class="class-spots">Spots: <strong>8 left</strong></div>
+              <span class="class-level level-beginner">Beginner</span>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="font-size:12px;padding:10px 20px;">Book Class</a>
+          </div>
+        </div>
+
+        <div class="class-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="class-header">🔥</div>
+          <div class="class-body">
+            <h3 class="class-name">CrossFit WOD</h3>
+            <div class="class-time"><i class="fa-solid fa-clock"></i> Daily · 6:00 AM & 6:00 PM</div>
+            <p class="class-desc">High-intensity functional training that builds strength, endurance and agility.</p>
+            <div class="class-meta">
+              <div class="class-spots">Spots: <strong>5 left</strong></div>
+              <span class="class-level level-advanced">Advanced</span>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="font-size:12px;padding:10px 20px;">Book Class</a>
+          </div>
+        </div>
+
+        <div class="class-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="class-header">💃</div>
+          <div class="class-body">
+            <h3 class="class-name">Dance Fitness</h3>
+            <div class="class-time"><i class="fa-solid fa-clock"></i> Tue, Thu, Sat · 8:00 AM</div>
+            <p class="class-desc">High-energy dance workouts combining Zumba, Bollywood, and cardio moves.</p>
+            <div class="class-meta">
+              <div class="class-spots">Spots: <strong>12 left</strong></div>
+              <span class="class-level level-beginner">Beginner</span>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="font-size:12px;padding:10px 20px;">Book Class</a>
+          </div>
+        </div>
+
+        <div class="class-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="class-header">⚡</div>
+          <div class="class-body">
+            <h3 class="class-name">Strength Camp</h3>
+            <div class="class-time"><i class="fa-solid fa-clock"></i> Mon, Wed, Fri · 7:00 PM</div>
+            <p class="class-desc">Heavy barbell and dumbbell training for serious muscle and strength development.</p>
+            <div class="class-meta">
+              <div class="class-spots">Spots: <strong>7 left</strong></div>
+              <span class="class-level level-intermediate">Intermediate</span>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="font-size:12px;padding:10px 20px;">Book Class</a>
+          </div>
+        </div>
+
+        <div class="class-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="class-header">💥</div>
+          <div class="class-body">
+            <h3 class="class-name">HIIT Burn</h3>
+            <div class="class-time"><i class="fa-solid fa-clock"></i> Tue, Thu · 6:30 AM & 6:30 PM</div>
+            <p class="class-desc">30-minute maximum fat-burning sessions with interval training methodology.</p>
+            <div class="class-meta">
+              <div class="class-spots">Spots: <strong>3 left</strong></div>
+              <span class="class-level level-intermediate">Intermediate</span>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="font-size:12px;padding:10px 20px;">Book Class</a>
+          </div>
+        </div>
+
+        <div class="class-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="class-header">🤸</div>
+          <div class="class-body">
+            <h3 class="class-name">Pilates</h3>
+            <div class="class-time"><i class="fa-solid fa-clock"></i> Wed, Sat · 9:00 AM</div>
+            <p class="class-desc">Core-focused workouts for posture improvement, flexibility and mindful movement.</p>
+            <div class="class-meta">
+              <div class="class-spots">Spots: <strong>10 left</strong></div>
+              <span class="class-level level-beginner">Beginner</span>
+            </div>
+            <a href="#contact" class="btn btn-outline" style="font-size:12px;padding:10px 20px;">Book Class</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       16. NUTRITION SECTION
+  ════════════════════════════════ -->
+  <section id="nutrition" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Fuel Your Body</div>
+        <h2 class="section-title">Nutrition <span>Guide</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="nutrition-hero" style="margin-top:60px;">
+        <div class="nutrition-img-wrap" data-aos="fade-up">
+          <img src="assets/images/nutrition.jpg" alt="Healthy Nutrition" />
+        </div>
+        <div data-aos="fade-up">
+          <div class="section-tag">Nutrition Philosophy</div>
+          <h3 style="font-family:'Bebas Neue',sans-serif;font-size:48px;letter-spacing:2px;margin-bottom:20px;">
+            Eat Smart.<br/><span style="color:var(--red-neon);">Train Hard.</span>
+          </h3>
+          <p class="section-desc" style="margin-bottom:24px;">
+            Our certified nutritionists create customized meal plans based on your body type,
+            goals, food preferences, and lifestyle. No crash diets — just science-backed sustainable nutrition.
+          </p>
+          <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:32px;">
+            <div class="feature-chip"><i class="fa-solid fa-check"></i> Personalized Macro Plans</div>
+            <div class="feature-chip"><i class="fa-solid fa-check"></i> Weekly Progress Tracking</div>
+            <div class="feature-chip"><i class="fa-solid fa-check"></i> Supplement Guidance</div>
+            <div class="feature-chip"><i class="fa-solid fa-check"></i> Cheat Meal Strategies</div>
+          </div>
+          <a href="#contact" class="btn btn-red"><i class="fa-solid fa-leaf"></i> Get Nutrition Plan</a>
+        </div>
+      </div>
+      <div class="meal-cards" data-aos="fade-up">
+        <div class="meal-card">
+          <div class="meal-icon">🌅</div>
+          <div class="meal-type">Breakfast</div>
+          <div class="meal-name">Oats & Egg Whites</div>
+          <div class="meal-macros">
+            <span class="macro-badge protein">35g P</span>
+            <span class="macro-badge carbs">45g C</span>
+            <span class="macro-badge fat">8g F</span>
+          </div>
+        </div>
+        <div class="meal-card">
+          <div class="meal-icon">☀️</div>
+          <div class="meal-type">Lunch</div>
+          <div class="meal-name">Chicken & Rice Bowl</div>
+          <div class="meal-macros">
+            <span class="macro-badge protein">45g P</span>
+            <span class="macro-badge carbs">60g C</span>
+            <span class="macro-badge fat">12g F</span>
+          </div>
+        </div>
+        <div class="meal-card">
+          <div class="meal-icon">🌙</div>
+          <div class="meal-type">Dinner</div>
+          <div class="meal-name">Salmon & Veggies</div>
+          <div class="meal-macros">
+            <span class="macro-badge protein">40g P</span>
+            <span class="macro-badge carbs">25g C</span>
+            <span class="macro-badge fat">18g F</span>
+          </div>
+        </div>
+        <div class="meal-card">
+          <div class="meal-icon">💪</div>
+          <div class="meal-type">Pre-Workout</div>
+          <div class="meal-name">Banana & Coffee</div>
+          <div class="meal-macros">
+            <span class="macro-badge protein">5g P</span>
+            <span class="macro-badge carbs">30g C</span>
+            <span class="macro-badge fat">2g F</span>
+          </div>
+        </div>
+        <div class="meal-card">
+          <div class="meal-icon">🥛</div>
+          <div class="meal-type">Post-Workout</div>
+          <div class="meal-name">Whey Protein Shake</div>
+          <div class="meal-macros">
+            <span class="macro-badge protein">30g P</span>
+            <span class="macro-badge carbs">10g C</span>
+            <span class="macro-badge fat">3g F</span>
+          </div>
+        </div>
+        <div class="meal-card">
+          <div class="meal-icon">🥜</div>
+          <div class="meal-type">Snack</div>
+          <div class="meal-name">Almonds & Cottage Cheese</div>
+          <div class="meal-macros">
+            <span class="macro-badge protein">20g P</span>
+            <span class="macro-badge carbs">12g C</span>
+            <span class="macro-badge fat">14g F</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       17. REVIEWS (WHAT MEMBERS SAY)
+  ════════════════════════════════ -->
+  <section id="reviews" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Testimonials</div>
+        <h2 class="section-title">What Members <span>Say</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="reviews-grid" style="margin-top:60px;">
+
+        <!-- Review 1 -->
+        <div class="review-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text review-preview">"ARIA FITNESS changed my life. In just 4 months with Rahul sir's training, I lost 18 kg and gained incredible confidence. The environment is just elite level!"</p>
+          <button class="btn-read-more" onclick="openReview(0)"><i class="fa-solid fa-book-open"></i> Read More</button>
+          <div class="review-author">
+            <div class="review-avatar">VK</div>
+            <div>
+              <div class="review-name">Vikram Khanna</div>
+              <div class="review-tag">Pro Member · 8 months</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text review-preview">"Best gym in the city — period. The equipment is top-notch, trainers are incredibly knowledgeable, and the vibe is unmatched. Aditi ma'am is amazing!"</p>
+          <button class="btn-read-more" onclick="openReview(1)"><i class="fa-solid fa-book-open"></i> Read More</button>
+          <div class="review-author">
+            <div class="review-avatar">SM</div>
+            <div>
+              <div class="review-name">Sneha Mehta</div>
+              <div class="review-tag">Elite VIP · 1 year</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="review-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <p class="review-text review-preview">"I joined as a skinny guy and now I've put on 15 kg of pure muscle. Arjun sir's bodybuilding program is absolutely incredible. Best investment of my life!"</p>
+          <button class="btn-read-more" onclick="openReview(2)"><i class="fa-solid fa-book-open"></i> Read More</button>
+          <div class="review-author">
+            <div class="review-avatar">AR</div>
+            <div>
+              <div class="review-name">Aman Rawat</div>
+              <div class="review-tag">Pro Member · 10 months</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Button to browse all member stories -->
+      <div style="text-align:center;margin-top:35px;" data-aos="fade-up">
+        <button class="btn btn-outline" onclick="openReview(0)" style="display:inline-flex;align-items:center;gap:8px;font-size:12px;padding:12px 28px;">
+          <i class="fa-solid fa-users"></i> Read All Member Stories (6)
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Review Modal Popup -->
+  <div class="review-modal-overlay" id="review-modal" onclick="closeReview(event)">
+    <div class="review-modal-box">
+      <button class="modal-close" onclick="closeReviewDirect()"><i class="fa-solid fa-xmark"></i></button>
+      <div class="review-modal-badge" id="rm-badge">VERIFIED MEMBER STORY</div>
+      <div class="review-modal-stars" id="rm-stars"></div>
+      <div class="review-modal-quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+      <p class="review-modal-text" id="rm-text"></p>
+      <div class="review-modal-highlight" id="rm-highlight"></div>
+      
+      <div class="review-modal-footer">
+        <div class="review-modal-author">
+          <div class="review-avatar" id="rm-avatar"></div>
+          <div>
+            <div class="review-name" id="rm-name"></div>
+            <div class="review-tag" id="rm-tag"></div>
+          </div>
+        </div>
+        <div class="review-modal-nav">
+          <button class="rm-nav-btn" onclick="prevReview()" title="Previous Member"><i class="fa-solid fa-chevron-left"></i> Prev</button>
+          <span id="rm-counter" class="rm-counter">1 / 6</span>
+          <button class="rm-nav-btn" onclick="nextReview()" title="Next Member">Next <i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════
+       18. STATISTICS
+  ════════════════════════════════ -->
+  <section id="statistics" class="section" style="position:relative;overflow:hidden;">
+    <div class="bg-glow" style="width:600px;height:600px;top:-200px;left:-200px;"></div>
+    <div class="bg-glow" style="width:600px;height:600px;bottom:-200px;right:-200px;"></div>
+    <div class="container" style="position:relative;z-index:1;">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Our Numbers</div>
+        <h2 class="section-title">Results That <span>Speak</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="0">
+          <div class="stat-big"><span class="counter-big" data-target="5000">0</span>+</div>
+          <div class="stat-card-label">Happy Members</div>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="stat-big"><span class="counter-big" data-target="35">0</span>+</div>
+          <div class="stat-card-label">Expert Trainers</div>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="stat-big"><span class="counter-big" data-target="120">0</span>+</div>
+          <div class="stat-card-label">Equipment Units</div>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="stat-big"><span class="counter-big" data-target="200">0</span>+</div>
+          <div class="stat-card-label">Weekly Classes</div>
+        </div>
+        <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+          <div class="stat-big"><span class="counter-big" data-target="98">0</span>%</div>
+          <div class="stat-card-label">Success Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       19. GYM GALLERY
+  ════════════════════════════════ -->
+  <section id="gallery" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Our World</div>
+        <h2 class="section-title">Gym <span>Gallery</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="gallery-grid" style="margin-top:60px;">
+        <div class="gallery-item" data-aos="fade-up"><img src="assets/images/gallery-1.jpg" alt="Gym Gallery" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="50"><img src="assets/images/about-gym.jpg" alt="Gym Interior" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100"><img src="assets/images/trainer-rahul.jpg" alt="Trainer" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="150"><img src="assets/images/equipment.jpg" alt="Equipment" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="0"><img src="assets/images/hero-bg.jpg" alt="Training" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="50"><img src="assets/images/trainer-aditi.jpg" alt="Trainer Aditi" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100"><img src="assets/images/trainer-arjun.jpg" alt="Trainer Arjun" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="150"><img src="assets/images/nutrition.jpg" alt="Nutrition" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="0"><img src="assets/images/trainer-neha.jpg" alt="Trainer Neha" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="50"><img src="assets/images/transformation.jpg" alt="Transformation" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="100"><img src="assets/images/gallery-1.jpg" alt="Classes" /></div>
+        <div class="gallery-item" data-aos="fade-up" data-aos-delay="150"><img src="assets/images/about-gym.jpg" alt="Gym" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       20. FAQ SECTION
+  ════════════════════════════════ -->
+  <section id="faq" class="section">
+    <div class="container" style="max-width:860px;">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">FAQs</div>
+        <h2 class="section-title">Frequently <span>Asked</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="0">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>What membership plans do you offer?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>We offer three plans: Basic (₹999/month) for gym access and cardio, Pro (₹1999/month) for personal trainer + CrossFit + diet plan, and Elite VIP (₹3499/month) for the full luxury experience including nutrition coach, recovery therapy, and priority support.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="50">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Are the trainers certified?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! All 35+ of our trainers hold nationally recognized certifications from bodies like ISSA, ACE, NASM, or equivalent. They regularly undergo continuing education to stay updated with the latest fitness science.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>What are your gym timings?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>ARIA FITNESS is open 24 hours a day, 7 days a week. Staffed hours are Monday-Saturday: 5:00 AM – 11:00 PM, and Sunday: 7:00 AM – 9:00 PM. Pro and Elite members get round-the-clock access via smart access cards.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Do you provide diet and nutrition plans?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! Pro members get a custom diet plan, while Elite VIP members have dedicated nutrition coaches. We create personalized macro-based meal plans tailored to your body composition, goals, dietary restrictions, and food preferences.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Can I book a free trial session?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Absolutely! We offer a FREE 1-day trial pass for all new visitors. Simply fill in the contact form, and our team will get in touch to schedule your complimentary session, which includes a full gym tour and a fitness assessment.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Is there a joining fee or lock-in contract?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>There is a one-time registration fee of ₹299. All memberships are month-to-month with no long-term lock-in contracts. We also offer quarterly (10% off) and annual (20% off) pre-payment discounts.</p>
+          </div>
+        </div>
+        <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="faq-question" onclick="toggleFAQ(this)">
+            <span>Do you have facilities for women?</span>
+            <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes! We have a dedicated women's-only workout zone with full equipment, separate changing rooms with steam bath access, and female certified trainers. Our classes like Yoga, Pilates, and Dance Fitness are very popular among women members.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       21. CONTACT SECTION
+  ════════════════════════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div style="text-align:center;" data-aos="fade-up">
+        <div class="section-tag">Get In Touch</div>
+        <h2 class="section-title">Contact <span>Us</span></h2>
+        <div class="red-line" style="margin:16px auto 0;"></div>
+        <p class="section-desc" style="text-align:center;margin:0 auto 0;">Ready to start your transformation? Reach out to us today.</p>
+      </div>
+      <div class="contact-grid">
+        <div data-aos="fade-up">
+          <form class="contact-form" onsubmit="submitForm(event)">
+            <input type="text" placeholder="Your Full Name *" required />
+            <input type="email" placeholder="Email Address *" required />
+            <input type="tel" placeholder="Phone Number *" required />
+            <select>
+              <option value="" disabled selected>Your Fitness Goal</option>
+              <option>Weight Loss</option>
+              <option>Muscle Building</option>
+              <option>General Fitness</option>
+              <option>Strength Training</option>
+              <option>Sports Performance</option>
+              <option>Yoga & Flexibility</option>
+            </select>
+            <textarea placeholder="Tell us about yourself and your goals..."></textarea>
+            <button type="submit" class="btn btn-red" style="justify-content:center;">
+              <i class="fa-solid fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+        <div data-aos="fade-up">
+          <div class="contact-info-cards">
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <div class="info-label">Address</div>
+                <div class="info-value">42, Fitness Street, Bandra West, Mumbai — 400050</div>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="info-label">Phone</div>
+                <div class="info-value">+91 98765 43210</div>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <div class="info-label">WhatsApp</div>
+                <div class="info-value">+91 98765 43210</div>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <div class="info-label">Email</div>
+                <div class="info-value">hello@ariafitness.in</div>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <div class="info-label">Working Hours</div>
+                <div class="info-value">Mon–Sat: 5AM–11PM · Sun: 7AM–9PM</div>
+              </div>
+            </div>
+          </div>
+          <div class="map-embed">
+            <div class="map-placeholder">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <p>42, Fitness Street, Bandra West<br/>Mumbai — 400050</p>
+              <a href="https://maps.google.com" target="_blank" class="btn btn-red" style="font-size:12px;padding:10px 20px;margin-top:12px;">
+                <i class="fa-solid fa-directions"></i> Get Directions
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════
+       22. FOOTER
+  ════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="logo-wrap">
+            <img src="assets/images/logo.jpg" alt="ARIA FITNESS" />
+            <span class="footer-logo-text">ARIA <span>FITNESS</span></span>
+          </div>
+          <p class="footer-desc">
+            Where passion meets performance. ARIA FITNESS is your premium destination for elite training,
+            expert coaching, and a community that drives results.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="social-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="#about"><i class="fa-solid fa-chevron-right"></i> About Us</a>
+            <a href="#membership"><i class="fa-solid fa-chevron-right"></i> Membership Plans</a>
+            <a href="#trainers"><i class="fa-solid fa-chevron-right"></i> Our Trainers</a>
+            <a href="#classes"><i class="fa-solid fa-chevron-right"></i> Fitness Classes</a>
+            <a href="#gallery"><i class="fa-solid fa-chevron-right"></i> Gallery</a>
+            <a href="#faq"><i class="fa-solid fa-chevron-right"></i> FAQ</a>
+            <a href="#contact"><i class="fa-solid fa-chevron-right"></i> Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <div class="footer-links">
+            <a href="#services"><i class="fa-solid fa-chevron-right"></i> Strength Training</a>
+            <a href="#services"><i class="fa-solid fa-chevron-right"></i> CrossFit</a>
+            <a href="#services"><i class="fa-solid fa-chevron-right"></i> HIIT</a>
+            <a href="#services"><i class="fa-solid fa-chevron-right"></i> Yoga</a>
+            <a href="#services"><i class="fa-solid fa-chevron-right"></i> Bodybuilding</a>
+            <a href="#nutrition"><i class="fa-solid fa-chevron-right"></i> Nutrition Plans</a>
+            <a href="#bmi"><i class="fa-solid fa-chevron-right"></i> BMI Calculator</a>
+          </div>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p class="footer-desc">Get fitness tips, workout plans and exclusive offers straight to your inbox.</p>
+          <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="Your email address" required />
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+          <div style="margin-top:24px;">
+            <p style="font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gray);margin-bottom:12px;">App Available On</p>
+            <div class="footer-app-btns" style="display:flex;gap:10px;flex-wrap:wrap;">
+              <a href="#" class="btn btn-outline" style="font-size:11px;padding:8px 16px;gap:6px;">
+                <i class="fa-brands fa-apple"></i> iOS
+              </a>
+              <a href="#" class="btn btn-outline" style="font-size:11px;padding:8px 16px;gap:6px;">
+                <i class="fa-brands fa-android"></i> Android
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2024 <span>ARIA FITNESS</span>. All rights reserved. Made with <span>❤</span> in India.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="back-to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <!-- ── Scripts ── -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
+
